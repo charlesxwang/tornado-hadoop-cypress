@@ -5,4 +5,4 @@ for oneTorn in sys.stdin:
   tornInfo = oneTorn.split(",")                                                                       
   tornID = tornInfo[0]                                                                               
   tz = tornInfo[6]                                                                                 
-  print ('%s\t%s' % (tornID, tz)) 
+  print ('%s\t%s' % (tz, tornID)) 
