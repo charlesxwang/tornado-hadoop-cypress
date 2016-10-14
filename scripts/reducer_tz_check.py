@@ -26,7 +26,6 @@ for line in sys.stdin:
 	current_tz_count += 1
   else:
     if tornID:
-      #rating_average = current_rating_sum / current_rating_count
       print ("%s\t%s\t%s\t%s" % (startID, endID, tz, current_tz_count))
     startID = tornID
     endID = tornID
@@ -34,7 +33,4 @@ for line in sys.stdin:
     current_tz_count = 1
 
 print ("%s\t%s\t%s\t%s" % (startID, endID, tz, current_tz_count))
-#if current_movie == movie:
-#  rating_average = current_rating_sum / current_rating_count
-#  print ("%s\t%s" % (current_movie, rating_average))  
-#print ("%s\t%s\t%s\t%s" % (current_movie, rating_average, current_rating_sum, current_rating_count))
+
